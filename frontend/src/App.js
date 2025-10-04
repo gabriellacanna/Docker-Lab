@@ -7,7 +7,7 @@ function App() {
     fetch("http://localhost:5000/api")
       .then(res => res.json())
       .then(data => setMsg(data.mensagem))
-      .catch(() => setMsg("Erro ao conectar com backend 😢"));
+      .catch(() => setMsg("Erro ao conectar com backend"));
   }, []);
 
   return (
